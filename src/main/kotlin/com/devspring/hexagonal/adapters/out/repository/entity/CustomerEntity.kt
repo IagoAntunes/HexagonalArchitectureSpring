@@ -22,5 +22,15 @@ data class CustomerEntity(
         isValidCpf = customer.isValidCpf
     )
 
+    fun toCustomer() : Customer{
+        return Customer(
+            id = this.id,
+            name = this.name,
+            address = this.address?.toAddress(),
+            cpf = this.cpf,
+            isValidCpf = this.isValidCpf
+        )
+    }
+
 
 }

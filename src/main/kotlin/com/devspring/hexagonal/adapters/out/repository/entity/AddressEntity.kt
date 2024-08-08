@@ -14,4 +14,12 @@ data class AddressEntity(
         city = address.city,
         state = address.state
     )
+
+    fun toAddress() : Address{
+        return Address(
+            street = this.street,
+            city = this.city,
+            state = this.state
+        )
+    }
 }
