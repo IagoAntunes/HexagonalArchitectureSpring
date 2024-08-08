@@ -1,0 +1,12 @@
+
+
+##application
+É onde fica o core da aplicação, toda a egra de negocio tudo que deve ficar isolado do mundop externo.
+porta de entrada e saida
+
+##Adapters
+Onfica fica os adaptadores de entrada e saida
+implementação das interfaces
+
+##Config
+Configurações do projeto
