@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class FindCustomerByIdConfig {
 
-
     @Bean
     fun findCustomerById(findCustomerByIdAdapter: FindCustomerByIdAdapter) : FindCustomerByInputPort {
         return FindCustomerByIdUseCase(findCustomerByIdAdapter)
